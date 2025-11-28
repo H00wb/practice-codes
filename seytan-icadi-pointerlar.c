@@ -16,7 +16,7 @@ int **********ptr9 = &ptr8;
 int ***********ptr10 = &ptr9;
 int ************ptr11 = &ptr10;
 
-// int *************ptr12 = &ptr11;  Cause of UB 
+// int *************ptr12 = &ptr11;  Cause of UB, you can declare max 12 pointers pointing pointers.
 
 printf("%d",(************ptr11));
 }
