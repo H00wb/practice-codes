@@ -16,7 +16,7 @@ void func(int* x)
     *x = 9999;
 }
 
-int main()
+int main(void)
 {
     int a = 10;
     printf("%d\n\n",a); // original value of a
