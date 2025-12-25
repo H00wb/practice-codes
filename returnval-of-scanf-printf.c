@@ -4,6 +4,14 @@
 
 int main(void)
 {
+	//printf stands for "print format" which is a member of standard library's <stdio.h> module, that prints the given formatted output (provided to its char array parameter) into the standard output stream.(which is our console by default)
+	
+	//scanf stands for "scan format" which is a member of standard library's <stdio.h> module, that reads input buffer, 
+	// extracts characters that suits its given format specifier(provided to its char array parameter) and sets these characters into the addresses of variables provided by programmer.
+
+	//E.G -> input buffer: 45a84opdef652123  scanf call by(assume x is int) -> scanf("%d",&x);   
+	// scanf reads buffer, extracts 45 like this|45|a84opdef652123, because it sees "a" as an incompatible character for decimal and stops extracting and takes 45 as a value for x. (x = 45)
+	
 	int x;
 
 	printf("%d\n", scanf("%d", &x)); // scanf as a function, returns the number of variables it has been set. In this line it returns "1".
