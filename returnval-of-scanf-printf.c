@@ -6,7 +6,7 @@ int main(void)
 {
 	//printf stands for "print format" which is a member of standard library's <stdio.h> module, that prints the given formatted output (provided to its char array parameter) into the standard output stream.(which is our console by default)
 	
-	//scanf stands for "scan format" which is a member of standard library's <stdio.h> module, that reads input buffer, 
+	//scanf stands for "scan format" which is a member of standard library's <stdio.h> module, that reads input buffer(buffer of std input stream btw), 
 	// extracts characters that suits its given format specifier(provided to its char array parameter) and sets these characters into the addresses of variables provided by programmer.
 
 	//E.G -> input buffer: 45a84opdef652123  scanf call by(assume x is int) -> scanf("%d",&x);   
