@@ -20,7 +20,7 @@ int main(void)
 
 	
 	// if int is a signed int (which is the current scenario),
-	// it is distributed between -(2^(n-1)) and [ (2^(n-1)) - 1 ] 
+	// it is distributed between [ -(2^(n-1)) ] and [ (2^(n-1)) - 1 ] 
 	// -> [-(2^15) , (2^15) - 1 ] -> [-32768 , 32767] 
 	
 	// if int is an unsigned int, it is distributed between 0 and [2^(n) - 1] -> [0 , ((2^16) - 1)] -> [0,65535]
