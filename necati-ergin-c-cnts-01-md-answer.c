@@ -15,7 +15,11 @@ int main(void)
 10000U
 '\x1A'
 */
-	// 65536 , if int is a signed int (which is the current scenario),
+	// 2 byte = 16 bits, 4 byte = 32 bits
+	// maximum limit calculation is done by 2^(bit count) 2^16 = 65536
+
+	
+	// if int is a signed int (which is the current scenario),
 	// it is distributed between -(2^(n-1)) and [ (2^(n-1)) - 1 ] 
 	// -> [-(2^15) , (2^15) - 1 ] -> [-32768 , 32767] 
 	
