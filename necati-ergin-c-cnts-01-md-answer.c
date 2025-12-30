@@ -15,16 +15,20 @@ int main(void)
 10000U
 '\x1A'
 */
-	printf("%lf",pow(2, 16)); // 65536 is the limit
+	// 65536 , if int is a signed int (which is the current scenario),
+	// it is distributed between -(2^(n-1)) and [ (2^(n-1)) - 1 ] 
+	// -> [-(2^15) , (2^15) - 1 ] -> [-32768 , 32767] 
+	
+	// if int is an unsigned int, it is distributed between 0 and 2^(n-1) - 1 -> [0 , ((2^15) - 1)] -> [0,32767]
 
 	/*
 	'A' -> (65) int
 	32767 -> int
-	32768 -> int
-	50000 -> int
+	32768 -> long
+	50000 -> long
 	0x7000 -> (28672) int
-	0xFFFF -> (65535) int on the limit
-	50000U -> unsigned int
+	0xFFFF -> (65535) long
+	50000U -> unsigned long
 	10000U -> unsigned int
 	'\x1A' -> (26) int
 	
