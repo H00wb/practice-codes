@@ -23,7 +23,7 @@ int main(void)
 	// it is distributed between -(2^(n-1)) and [ (2^(n-1)) - 1 ] 
 	// -> [-(2^15) , (2^15) - 1 ] -> [-32768 , 32767] 
 	
-	// if int is an unsigned int, it is distributed between 0 and 2^(n-1) - 1 -> [0 , ((2^15) - 1)] -> [0,32767]
+	// if int is an unsigned int, it is distributed between 0 and [2^(n) - 1] -> [0 , ((2^16) - 1)] -> [0,65535]
 
 	/*
 	'A' -> (65) int
@@ -32,7 +32,7 @@ int main(void)
 	50000 -> long
 	0x7000 -> (28672) int
 	0xFFFF -> (65535) long
-	50000U -> unsigned long
+	50000U -> unsigned int
 	10000U -> unsigned int
 	'\x1A' -> (26) int
 	
